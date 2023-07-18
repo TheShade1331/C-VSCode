@@ -440,3 +440,12 @@ Practice Set 5
    -  Then Second ++a is Executed i.e first 2+1 occurs & a is now 3 & then 3 is Printed.
    -  Then Finally a is 3. & a is Printed.
 6. Write a recursive Function to Calculate the Sum of First N Natural Numbers.
+7. Write a Program using Functions to Print the Following Pattern.(first n Lines).
+Chapter 5: Finished
+18/07/2023 21:32
+Video - 7:04:50 / 15:13:23
+
+/*
+Chapter 6: 
+18/07/2023 21:33
+
