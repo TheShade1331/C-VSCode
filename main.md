@@ -446,6 +446,25 @@ Chapter 5: Finished
 Video - 7:04:50 / 15:13:23
 
 /*
-Chapter 6: 
+Chapter 6: Pointers
 18/07/2023 21:33
+- A Pointer is a Variable which Stores the Address of Another Variable.
+- If Variable i's Address is 87994 & if Variable j Stores this Address 87994 in it, then j is a Pointer of i.
+  
+The "Address of" Operator - &
+- The Address of Operator is Used to Obtain the Address of a Given Variable.
+e.g. &i = 87994 , &j = 87998
 
+The "Value of Address" Operator - *
+- The Value of Address Operator is Used to Obtain the Value of a Given Memory Address. It is denoted by *.
+e.g. *(&i) = 72
+     *(&j) = 87994
+
+How to Declare a Pointer?
+- A Pointer is Declared Using the Following System.
+- int*j;  => declare a Variable j of Type int pointer
+- j=&i    => Store Address of i in j.
+
+- int *a; => Pointer to Integer
+- char *a; => Pointer to Character
+- float*a => Pointer to Float
