@@ -468,3 +468,28 @@ How to Declare a Pointer?
 - int *a; => Pointer to Integer
 - char *a; => Pointer to Character
 - float*a => Pointer to Float
+
+Pointer to a Pointer
+- Just Like j is Pointing to i or Storing the Address of i..
+- We can Have another variable k which can further store the Address of j.
+- int **k
+- k = &j
+- We Can Go further with int*** to store the Address of k.
+- We Mostly Use int*.. sometimes upto int** in real world Programs.
+
+**Types of Function Calls**
+- Based on the Way we Pass Arguments to the Function, Function Calls are of Two Types.
+- 1. *Call By Value*         --> Sending the Values of Arguments
+- 2. *Call By Reference*     --> Sending the Address of Arguments
+
+*Call By Value*
+- Sending the Values of Arguments
+- int c = sum (int x(3),int y(4));  // assume x=3 & y=4
+- Here the Values 3 & 4 are Copied to a & b.
+- Now even if we Change a & b, nothing happens to the Variables x & y.
+
+- In C we Usually use Call by value.
+
+*Call By Reference*
+- Sending the Address of Arguments
+- Now, Since the Addresses are Passed to the Function, the Funtion Can Now Modify the Value of a Variable in Calling Function using * and & Operators.
