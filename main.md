@@ -493,3 +493,10 @@ Pointer to a Pointer
 *Call By Reference*
 - Sending the Address of Arguments
 - Now, Since the Addresses are Passed to the Function, the Funtion Can Now Modify the Value of a Variable in Calling Function using * and & Operators.
+
+Practice Set 6
+
+1. Write a Program to Print the Address of a Variable. Use this Address to get the Value of this Variable.
+2. Write a Program having a Variable i. Print the Address of i. Pass this Variable to a Function and Print its Address. Are those Addresses same? why?
+  => The Addresses are Diffrent Because the Function Just Copies values.
+3. Write a Program to Change its Value by Ten Times of its Current Value. Write a Function and Pass the Value by Reference.
