@@ -444,6 +444,7 @@ Practice Set 5
 Chapter 5: Finished
 18/07/2023 21:32
 Video - 7:04:50 / 15:13:23
+/*
 
 /*
 Chapter 6: Pointers
@@ -500,3 +501,11 @@ Practice Set 6
 2. Write a Program having a Variable i. Print the Address of i. Pass this Variable to a Function and Print its Address. Are those Addresses same? why?
   => The Addresses are Diffrent Because the Function Just Copies values.
 3. Write a Program to Change its Value by Ten Times of its Current Value. Write a Function and Pass the Value by Reference.
+4. Write a Program using a function which calculates the Sum & Average of two Numbers. Use Pointers & Print the values of Sum & Average in Main()
+5. Write a Program to Print the Value of a Variable i using "Pointer to Pointer" type of Variable.
+6. Try problem 3 using Call by Value & Verify that it dosen't Change the Value of the said Variable.
+
+Chapter 6: Finished
+21/07/2023 20:51
+Video - 8:26:40 / 15:13:23
+/*

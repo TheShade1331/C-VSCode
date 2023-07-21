@@ -3,7 +3,7 @@ int tenx(int *a);
 int main()
 {
     int x=4;
-    tenx( &x );
+    tenx(&x);
     return 0;
 }
 int tenx(int *a)
