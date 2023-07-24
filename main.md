@@ -509,3 +509,42 @@ Chapter 6: Finished
 21/07/2023 20:51
 Video - 8:26:40 / 15:13:23
 /*
+
+/*
+Chapter 7: Arrays
+24/07/2023 21:58
+
+**Array**
+- An Array is a Collection of Similar Elements.
+- One Variable Capable of Storing Multiple Values.
+
+Syntax:
+- int marks[90]: => Integer Array
+- char name[20]: => Character Array
+- float percentile[90] => float Array
+
+- The values can now be assigned to marks array like this:
+- marks[0] = 33;
+- marks[1] = 12;
+- Note: It is Very Important to Note that the Array index Starts with 0.
+
+- Memory is Stored in a Contigious Block in Array.
+
+Accessing Elements
+- Elements of an Array can be accessed using:
+- scanf("%d", &marks[0]);  => input first value
+- printf("%d", marks[0]);  => output first value of the Array.
+- basically marks[0] will work as a Normal int variable.
+
+Intialization of an Array
+- There are many other ways in which an Array can be Initialised.
+
+- int cgpa[3] = {9,8,8} => Arrays can be intialized with curly Brackets.
+- float marks[] = {33.2, 22.7}
+
+Arrays in Memory
+- Consider this Array
+- int arr[3] = {1,2,3} => 1 Integer = 4 Bytes
+- This will reverse 4 x 3 = 12 bytes in Memory 4 Bytes for each Integer.
+-  |   1   |   2   |   3   |   => Arrays in Memory
+-    62302   62306   62310     => Address of Blocks.. in Diffrence of 4.
