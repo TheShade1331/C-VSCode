@@ -545,6 +545,30 @@ Intialization of an Array
 Arrays in Memory
 - Consider this Array
 - int arr[3] = {1,2,3} => 1 Integer = 4 Bytes
-- This will reverse 4 x 3 = 12 bytes in Memory 4 Bytes for each Integer.
--  |   1   |   2   |   3   |   => Arrays in Memory
+- This will reserve 4 x 3 = 12 bytes in Memory 4 Bytes for each Integer.
+-  |   1   |   2   |   3   |   => Arrays in Memory 
 -    62302   62306   62310     => Address of Blocks.. in Diffrence of 4.
+
+Pointer Arithmatic
+- A Pointer can be incremented to Point to the Next Memory Location of that Type.
+
+- Example 1:
+-  int i = 32;
+-  int *a = &i;  => a = 87994;
+-  a++;          => Now a = 87998;
+
+- Example 2:
+-  char a = 'A';
+-  char *b = &a;  => b = 87994;
+-  b++;           => Now b = 87995;
+
+- Example 3:
+-  float i = 1.7;
+-  float *a = &i; => Address of i or a = 87994;
+-  a++;           => Now a = 87998;
+
+- Following Operations can be Performed on Pointers:
+-  1. Addition of a Number to Pointer
+-  2. Substraction of a Number from a Pointer
+-  3. Substraction of One Pointer from Another.
+-  4. Comparison of Two Pointer Variables.
