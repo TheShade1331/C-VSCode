@@ -572,3 +572,19 @@ Pointer Arithmatic
 -  2. Substraction of a Number from a Pointer
 -  3. Substraction of One Pointer from Another.
 -  4. Comparison of Two Pointer Variables.
+
+- Accesing Arrays with Pointers with Incrementing Pointers
+
+**Multidimensional Arrays**
+- An Array can be of 2D, 3D or n-dimensions.
+
+- A 2D array can be defined as:
+- int arr[3][2] = {{1,4},{7,9},{11,22}};
+- We can Access the elements of this Array as:
+- arr [0][0] = 1
+- arr [0][1] = 4
+- arr [1][0] = 7
+- arr [1][1] = 9 & so on..
+
+2D arrays in Memory
+- A 2D array is like a arr

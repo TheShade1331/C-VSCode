@@ -3,7 +3,8 @@ int main()
 {
     int marks[4];
     int *ptr;
-    ptr = &marks[0];
+    // ptr = &marks[0];
+    ptr = marks;            //Can Also be Written as Just Array Name
     for(int i=0; i<4; i++)
     {
         printf("Enter the Marks of Student No: %d\n", i+1);
