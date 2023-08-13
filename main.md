@@ -578,6 +578,13 @@ Pointer Arithmatic
 **Multidimensional Arrays**
 - An Array can be of 2D, 3D or n-dimensions.
 
+- Bracket Number 1 = Row Number
+- Bracket Number 2 = Column Number
+- Bracker Number 3 = Depth Number
+
+- int A[2][3] contains 3 brackets each of 2 elements.
+- int A[2][3][2] contains 2 big brackets each containing 3 brackets each of 2 elements.
+
 - A 2D array can be defined as:
 - int arr[3][2] = {{1,4},{7,9},{11,22}};
 - We can Access the elements of this Array as:
@@ -593,6 +600,8 @@ Pointer Arithmatic
 -  |    1    |    4    |    7    |    9    |  => 2D Arrays in Memory 
 -     87224     87228     87232     87236...   & so on..
 
+- In C, when you pass an array to a function, you're actually passing a pointer to the first element of the array. So, when you modify the elements of the array inside the function, you are modifying the elements in the original array as well.
+
 Practice Set 7
 
 1. Create an Array of 10 Numbers. Verify using pointer Arithmatic that (ptr + 2) points to the Third Element where ptr is a Pointer to the First Element of the Array.
@@ -604,3 +613,7 @@ Practice Set 7
 3. Write a Program to Create an Array of 10 integers and store Multiplication Table of 5 in it.
 4. Repeat Problem 3 for a General Input provided by the user using scanf.
 5. Write a Program containing a function which reverses the Array Passed to it.
+6. Write a Program containing functions which counts the Number of Positive integers in an Array.
+7. Create an Array of Size 3 x 10 containing multipliation tables of the Numbers 2,7 & 9 Respectively.
+8. Repeat Problem 7 for a Custom input given by the User.
+9. Create a Three-Dimensional Array and Print the Address of its elements in a Increasing Order.
