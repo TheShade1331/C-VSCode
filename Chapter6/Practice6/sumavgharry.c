@@ -6,7 +6,7 @@ int main()
     float avg;
     i = 3;
     j = 6;
-    sumAndAvg(i,j, & sum, &avg);
+    sumAndAvg(i,j, &sum, &avg);
     printf("The value of Sum is %d\n", sum);
     printf("The Value of avg is %f \n", avg);
     return 0;

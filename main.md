@@ -587,4 +587,8 @@ Pointer Arithmatic
 - arr [1][1] = 9 & so on..
 
 2D arrays in Memory
-- A 2D array is like a arr
+- A 2D array is like a 1D Array Stored in Contagious Memomry Blocks like this:
+  
+-   arr[0][0] arr[0][1] arr[1][0] arr[1][1]
+-  |    1    |    4    |    7    |    9    |  => 2D Arrays in Memory 
+-     87224     87228     87232     87236...   & so on..
