@@ -617,3 +617,32 @@ Practice Set 7
 7. Create an Array of Size 3 x 10 containing multipliation tables of the Numbers 2,7 & 9 Respectively.
 8. Repeat Problem 7 for a Custom input given by the User.
 9. Create a Three-Dimensional Array and Print the Address of its elements in a Increasing Order.
+
+Chapter 7: Finished
+13/08/2023 22:50
+Video - 10:14:16 / 15:13:23
+*/
+
+/*
+Chapter 8: Strings
+13/08/2023 22:51
+
+**Strings**
+- A String is a 1-D Character Array, Terminated by a Null Character('\0').
+- Characters are Stored in Continuous Memory Location.
+
+- *\0* is a Null Character.
+- It is Used to denote String Termination.
+
+Intializing Strings
+- Since String is an array of Characters, it can be initialized as follows:
+- char S[] = {'S','A','G','A','R','\0'};
+
+- There is another shortcut of intializing Strings in C Language:
+- char T[] = "SAGAR";  => In this case C adds a Null Character automatically.
+
+Strings in Memory
+- A String is Stored just like an Array in the Memory as Shown below
+-  |   S   |   A   |   G   |   A   |   R   |   \0   | => Strings in Memory 
+-    62302   62303   62304   62305   62306    62307   => Address of Blocks.. in Diffrence of 1.
+- Contigious Blocks in Memory with 1 diff in Pointer Because Size of char is 1.
