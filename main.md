@@ -1,5 +1,5 @@
+# C-VSCODE
 /*
-
 - c is a middle level Language
 - i.e. it is a Connecting link between high & low level languages
 - its NOT object oriented
@@ -592,3 +592,15 @@ Pointer Arithmatic
 -   arr[0][0] arr[0][1] arr[1][0] arr[1][1]
 -  |    1    |    4    |    7    |    9    |  => 2D Arrays in Memory 
 -     87224     87228     87232     87236...   & so on..
+
+Practice Set 7
+
+1. Create an Array of 10 Numbers. Verify using pointer Arithmatic that (ptr + 2) points to the Third Element where ptr is a Pointer to the First Element of the Array.
+2. If S[3] is a 1-D array of integers then *(S+3) refers to the third Element:
+   (i) True
+   (ii) False
+   (iii) Depends
+   => False = S+3 will point to 4th Element, Array has only 3.
+3. Write a Program to Create an Array of 10 integers and store Multiplication Table of 5 in it.
+4. Repeat Problem 3 for a General Input provided by the user using scanf.
+5. Write a Program containing a function which reverses the Array Passed to it.
