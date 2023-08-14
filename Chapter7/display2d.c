@@ -1,7 +1,7 @@
 #include <stdio.h>
-#define MAX_ROWS 100   // Define an appropriate maximum number of rows
-#define MAX_COLUMNS 100 // Define an appropriate maximum number of columns
-void display(int B[MAX_ROWS][MAX_COLUMNS], int a, int b);
+#include <stdlib.h> // Include the necessary header for dynamic memory allocation
+
+void display(int **B, int a, int b);
 
 int main()
 {
@@ -11,12 +11,12 @@ int main()
     printf("Enter the Number of Columns in Array:");
     scanf("%d", &b);
 
-    if (a > MAX_ROWS || b > MAX_COLUMNS) {
-        printf("Input dimensions exceed the maximum allowed size.\n");
-        return 1;
+    int **A = (int **)malloc(a * sizeof(int *));
+    for (int i = 0; i < a; i++)
+    {
+        A[i] = (int *)malloc(b * sizeof(int));
     }
 
-    int A[a][b];
     for (int i = 0; i < a; i++)
     {
         for (int j = 0; j < b; j++)
@@ -25,11 +25,20 @@ int main()
             scanf("%d", &A[i][j]);
         }
     }
+
     display(A, a, b);
+
+    // Free the allocated memory
+    for (int i = 0; i < a; i++)
+    {
+        free(A[i]);
+    }
+    free(A);
+
     return 0;
 }
 
-void display(int B[MAX_ROWS][MAX_COLUMNS], int a, int b)
+void display(int **B, int a, int b)
 {
     printf("{");
     for (int i = 0; i < a; i++)
