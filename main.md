@@ -646,3 +646,66 @@ Strings in Memory
 -  |   S   |   A   |   G   |   A   |   R   |   \0   | => Strings in Memory 
 -    62302   62303   62304   62305   62306    62307   => Address of Blocks.. in Diffrence of 1.
 - Contigious Blocks in Memory with 1 diff in Pointer Because Size of char is 1.
+
+Printing Strings
+1. A String can be Printed Character by Character using printf and %c with Loops
+2. It can also be done Using Loops & pointer for Whole Word as String.
+3. Short & Convenient Method: using %s & pointers
+   
+- %s - Format Specifier For Strings
+
+Scanning Strings: Taking Input from User.
+- we can use %s with scanf to take string input from the User:
+- scanf("%s", S);
+- Scanf Automatically adds Null Character when the enter key is Pressed.
+
+- **Note:**
+- 1. The String Should be Short Enough to Fit into the Array.
+- 2. Scanf CANNOT be used to input multi-word strings with Spaces.
+
+- So to Scan Multi-word Strings we have gets() & puts()
+
+gets() & puts()
+- gets() is a function which can be used to recieve a Multi-Word String.
+- gets(T);
+- Multiple gets() calls will be needed for multiple Strings.
+
+- puts() can be used to output a string.
+- prints the string & places the cursor on the next line.
+
+Declaring a String using Pointers
+- we can declare strings using pointers.
+- char *ptr or char ptr[] = "Sagar";
+- This Tells the compiler to store the String in Memory and Assigned Address is Stored in a char Pointer.
+
+- **Note:**
+- 1. Once a String is Defined using char st[] = "Sagar", it cannot be initialised to something else.
+- 2. A string defined using Pointers can be re-initialised ptr = "Rohan"
+
+Standard Library Functions for Strings
+- C provides a set of Standard Library Functions for String Manipulation.
+- <string.h> header file contains these functions
+- Some of the Most commonly used String Functions are:
+  1. strlen
+  - This Function is Used to Count the Number of Characters in the String excluding the Null(\0) Character.
+  
+  2. strcpy
+  - This Function is Used to Copy the content of Second String into first string passed to it.
+  - strcpy(target,source); //source will be copied into the target.
+  - Target String Should have Enough Capacity to Store the Source String.
+
+  3. strcat
+  - This Function is used to Concatenate two strings.
+  - strcat(S1,S2); => S1 contains the Concatenated Output.{No Space in Between}
+  
+  4. strcmp
+  - This Function is Used to Compare two Strings.
+  - It returns 0 :- Strings are Equal.
+  - It returns val < 0 :- When First String's Mismatching Character's ASCII Value is not Greater than Second's String's Corresponding Mismatching Character.
+  - It returns val > 0 :- Opposite of Above Condition.
+
+Practice Set 8
+
+1. Which of the following is used to appropriately read a multi-word string.
+   => (a) gets()
+2. Write a Program to take string as an input from the user using %c and %s. Confirm that the Strigs are Equal.
