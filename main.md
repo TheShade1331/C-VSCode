@@ -723,3 +723,90 @@ Chapter 8: Finished
 16/08/2023 12:24
 Video - 11:29:44 / 15:13:23
 */
+
+/*
+Chapter 9: Structures
+16/08/2023 17:32
+
+- Arrays & Strings => Similar data(int, float, char)
+- Structures can hold => dissimilar data
+
+Syntax for creating Structures:
+- A C Structure can be created as Follows:
+
+struct employee
+{
+    int code;
+    float salary;                   => This Declares a New User-Defined Data Type
+    char name[10];
+}; --> Semicolon is Important
+
+- Creating a Structure Variable
+struct employee e1   // we have to write both struct and name of structure
+
+- Dot(.) Operator in C
+- Also called **Member Operator**
+- Used to Access Class, Structures or Union Members.
+- Used to separate a Variable and Method from a Reference Variable.
+
+- Structure is a Variable that can hold info in many datatypes for a Single Entity.
+- Like a Multidimensional Array but Better. 
+- So, a Structure is a collection of Variables of Different types under a Single name.
+
+Why Use Structures:
+- We can create datatypes within the Structure seperately as well..
+- But when the Number of Properties in a Structure increases, it becomes difficult for us to Create data variables without structures. In a summary,
+- (a) Structures keep the Data organised
+- (b) Structures make data management easy for the Programmer.
+
+Array of Structures:
+- Just like an Array of integers, floats or characters, we can create an Array of Structures.
+  struct employee YouTube[100];
+- we can Access the Data using:
+  YouTube[0].code = 100;
+  YouTube[1].code = 101;  ..& So on
+
+Initialising Structures:
+- Structures can Also be Intialised as follows:
+  struct employee Sagar = {100, 71.22, "Sagar"}
+
+- To Set all Elements to Zero:
+  struct employee Meet = {0}
+
+Structures in Memory
+- Structures are Stored in Contigious Memory Locations
+- For the Structure e1 of type: struct employee,
+- Memory Layout Looks like this:
+-  |   100   |   71.22   |   "Sagar"   |   => Structures in Memory 
+-     62302      62306        62310        => Address of Blocks..
+-     int=4     float=4     char=5*1=5
+  
+- In an Array of Structures, these Employee instances are Stored Adjacent to each other.
+
+Pointer to Structures
+- A Pointer to Structure can be created as follows:
+  
+1. Using Dot Operator & Parenthesis
+   struct employee e1;
+   struct employee *ptr;
+
+   ptr = &e1;
+   (*ptr).code = 101;  //Why Parenthesis => Operator Precedence
+
+1. Arrow Operator
+- Instead of Writing (*ptr).code, we can use arrow operator to access structure properties as follows:
+       (*ptr).code  or  ptr->code
+- Here -> is known as the Arrow Operator.
+
+Passing Structures to a Function
+- A structure can be Passed to a Function just like any other datatype.
+  void show (struct employee e);    => function prototype
+ 
+Typedef Keyword
+- We can use the typedef keyword to create an alias name for data types in C.
+- Typedef is more commonly used with structures.
+
+Practice Set 9
+
+1. Create a two dimensional vector using structures.
+2. Write a function SumVector which returns the sum of two Vectors passed to it. The Vectors must be Two Dimensional.
