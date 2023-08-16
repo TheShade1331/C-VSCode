@@ -709,3 +709,17 @@ Practice Set 8
 1. Which of the following is used to appropriately read a multi-word string.
    => (a) gets()
 2. Write a Program to take string as an input from the user using %c and %s. Confirm that the Strigs are Equal.
+   => Learnings: use fflush(stdin); while using two Scanf one after other.
+3. Write Your Own Version of strlen function from <string.h>
+4. Write a Function to Slice() to slice a String. It Should change the Original String such that it is now the sliced String. Take m and n as the Start and Ending Positions for Slice.
+5. Write your own version of strcpy function from <string.h>.
+6. Write a program to encrypt a string by adding 1 to ASCII value of its Characters.
+   => Learnings: When You Do Arithmatic Operations with Characters. It Changes According to its ASCII Values & Hence We Can Use it in Encryption & Decryption Methods.
+7. Write a Program to Decrypt the String Ecrypted using Encrypt Function in Problem 6.
+8. Write a Program to Count the Occurence of a given Character in a String.
+9. Write a Program to check whether a given character is present in a string or not.
+
+Chapter 8: Finished
+16/08/2023 12:24
+Video - 11:29:44 / 15:13:23
+*/
