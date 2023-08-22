@@ -3,6 +3,7 @@
     "ostream": "cpp",
     "random": "c",
     "string.h": "c",
-    "charconv": "c"
+    "charconv": "c",
+    "ratio": "c"
   }
 }

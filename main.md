@@ -810,3 +810,10 @@ Practice Set 9
 
 1. Create a two dimensional vector using structures.
 2. Write a function SumVector which returns the sum of two Vectors passed to it. The Vectors must be Two Dimensional.
+3. Twenty Integers are to be stored in Memory. What will you prefer - Array or Structure.
+  => Array because only 1 datatype & arrays are less complicated than Structures
+4. Write a Program to Illustrate the Use of Arrow Operator in C.
+5. Write a Progrm with a Structure representing a Complex Number.
+6. Create an Array of 5 Complex Numbers created in Problem 5 and Display them with the Help of a Display Function. The Values Must be taken as an input from the User.
+7. Write problem 5's Structure using typedef keyword.
+8. Create a Structure representing a bank account of a customer. What fields did you use and Why?
