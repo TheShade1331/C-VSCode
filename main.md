@@ -817,3 +817,10 @@ Practice Set 9
 6. Create an Array of 5 Complex Numbers created in Problem 5 and Display them with the Help of a Display Function. The Values Must be taken as an input from the User.
 7. Write problem 5's Structure using typedef keyword.
 8. Create a Structure representing a bank account of a customer. What fields did you use and Why?
+9. Create a Sturcture represnting a Date & Print Date Using a Function in DD/MM/YYYY format. Write a Function to Compare Any Two Dates.
+10. Problem 10 in Typedef.
+
+Chapter 9: Finished
+6/09/2023 00:28
+Video - 12:53:19 / 15:13:23
+*/
