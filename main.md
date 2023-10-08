@@ -824,3 +824,41 @@ Chapter 9: Finished
 6/09/2023 00:28
 Video - 12:53:19 / 15:13:23
 */
+
+/*
+Chapter 10: File I/O
+8/10/2023 22:40
+
+- RAM is Volatile.
+- Its Content is Lost Once the Program is Terminated.
+- Hence to Save the Data we Use Files."
+
+- File:- Data Stored in a Storage Device
+- C Program Allows :- Read & Write in File
+
+File Pointer
+- File is a Structure - needs to be Created for Opening the File. 
+- File Pointer - Pointer to that Structure
+               - Needed for Communication between File & the Program.
+
+- How to Use:
+  
+  `FILE *ptr;`
+  `ptr = fopen("filename.ext","mode")`
+  - Takes 2 Arguments
+  - Filename with Extension.. eg. This.txt
+  - Mode :- Either Read or Write...Generally
+
+File Opening Modes:
+
+ - `r` --> open for reading
+ - `rb` --> open for reading in BINARY
+// If the File Dosen't Exist then fopen returns Null
+
+ - `w` --> open for writing
+ - `wb` --> open for writing in BINARY
+// If the File exists the Contents will e Overwritten
+
+ - `a` --> open for Append
+// If the File Does Not Exist, it will be Created
+
