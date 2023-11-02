@@ -862,3 +862,36 @@ File Opening Modes:
  - `a` --> open for Append
 // If the File Does Not Exist, it will be Created
 
+Types of Files
+
+- There are two Types of Files:
+
+1. Text Files (.txt, .c)
+   - can be Opned using Notepad.
+   - Written in Normal User Understandable Language
+2. Binary Files (.jpg, .dat)
+   - cannot be opened using Notepad.
+   - Written in ASCII Language. Computer Understood Language.
+
+Reading a File
+ - File first needs to be Opened using fopen
+ - That File First Needs to Exist.
+ - So Either Create that File Manually or Open in Write Mode.
+
+ - Now to read the info in the File, use `fscanf`
+ - `fscanf` Syntax:
+   - fscanf(file_name, %d, &a);
+
+ - A good Practice is to Close a File after Opening it to.
+ - `fclose` Syntax:
+   - fclose(file_name)
+
+ - This will Tell the Compiler that we are done Working with this File
+ -  & the Associated Resources could be Freed.
+
+Writing to a File
+ - `fprintf` to write in File.
+ - If file does not Exist.. Then Creates a File.
+ - If File Does Exist with Some Pre-Existing Info.. OverWrites it!
+
+fgetc() & fputc()
