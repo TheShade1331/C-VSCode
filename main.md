@@ -844,7 +844,7 @@ File Pointer
 - How to Use:
   
   `FILE *ptr;`
-  `ptr = fopen("filename.ext","mode")`
+  `ptr = fopen("filename.txt","mode")`
   - Takes 2 Arguments
   - Filename with Extension.. eg. This.txt
   - Mode :- Either Read or Write...Generally
@@ -895,3 +895,31 @@ Writing to a File
  - If File Does Exist with Some Pre-Existing Info.. OverWrites it!
 
 fgetc() & fputc()
+- `fgetc` --> Reading a File Character by Character
+  - Syntax:
+  - ptr = fopen("file.txt","r");
+  - fgetc(ptr);
+- `fputc` --> Writing a File Character by Character
+  - Syntax:
+  - ptr = fopen("file.txt","r");
+  - fputc('c', ptr);
+
+EOF: End of File
+- Represents End Character of a File.
+- fgetc returns EOF when all the Characters from a File have been read.
+
+Seek Function
+- To Interact with Pointer of File.
+- `fseek(ptr, 0, SEEK_SET);` - Sets Pointer of File Back to 0th Index.
+
+Practice Set 10:
+1. Write a Program to Read three Integers from a File.
+2. Write a Program to Generate Multiplication Table of a Given Number in Tex Format. Make sure that the File is readable & Well Formatted.
+3. Write a Program to Read a text file character by character & write its Content Twice in a Seperate File.
+4. Take name and Salary of Two Employees as input from the User and Write them to a text file in the Follwing Format:
+   name1 , 3300
+   name2 , 7700
+5. Write a Program to Modify a File containing an integer to double its Value.
+Chapter 10: Finished
+3/12/2023 19:00
+Video - 14:00:19 / 15:13:23
