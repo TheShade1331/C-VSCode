@@ -924,3 +924,64 @@ Chapter 10: Finished
 3/12/2023 19:00
 Video - 14:00:19 / 15:13:23
 
+/*
+Chapter 11: Dynamic Memory Allocation
+5/12/2023 19:52
+
+- C is a Language with Some Fixed rules of Programming.
+- For Example: Changing the Size of an Array is not Allowed.
+
+Dynamic Memory Allocation
+- Dynamic Memory Allocation is a Way to Allocate memory to a data Structre during the Runtime we can use DMA functions available in C to Allocate & free during runtime.
+
+Functions for DMA in C
+- Following functions arw Available in C to Perform Dynamic memory Allocation.
+
+1. malloc()
+2. calloc()
+3. free()
+4. realloc()
+
+**malloc()**
+- Malloc Stands for Memory Allocation.
+- It Takes number of Bytes to be allocated as an Input and Returns a Pointer of Type Void.
+- Syntax:
+  `ptr = (int*)malloc(30*sizeof(int));`
+    - i. Typing Void Pointer to Int.
+    - ii. Space for 30 Ints
+    - iii. Sizeof(int) returns Size of 1 int
+
+Quiz: Write a Program to Create a Dynamic Array of 5 floats using malloc().
+
+**calloc()**
+- Calloc Stands for Continuous Memory Allocation.
+- It intialized each Memory block with a Default Value of 0.
+- Syntax:
+  `ptr = (float*)calloc(30, sizeof(float));`
+    - i. Typing Void Pointer to Float.
+    - ii. Allocates Continuous Space in Memory of 30 Floats
+    - iii. Sizeof(float) returns Size of 1 Float.
+    - iv. Intialises Each Block as 0.
+
+- If the Space is Not Sufficient, Memory Allocation Fails and a NULL Pointer is Returned.
+
+Quiz: Write a Program to Create an Array of Size n using Calloc where n is an integer entered by the User.
+
+**free**
+- We Can use free() function to de-allocate the memory.
+- The memory allocated using Calloc/Malloc is not deallocated Automatically.
+
+**realloc**
+- Sometimes the dynamically allocated Memory is insufficient or more than required.
+- realloc is used the previous pointer and size.
+- - Syntax: `ptr = realloc(ptr, newSize);`
+  `ptr = realloc(ptr, 3*Sizeof(int));`
+    - i. ptr now points to this 'new block' of Memory
+
+Practice Set 11:
+1. Write a Program to dynamically create an Array of Size 6 capable of Storing 6 integers.
+2. Use the Array in Problem 1 to Store 6 integers Entered by User.
+3. Solve Problem 1 using Calloc - //I'm not doing.. Same Thing
+4. Create an Array dynamically capable of Storing 5 Integers. Now Use Realloc so that it Can Now Store 10 Integers.
+5. Create an Array of Multiplication Table of 7. Use Realloc to Make it store to 15th Multiple.
+6. Attempt Problem 4 using calloc().. No Thanks.. Then Again.. Last Program.. Might as Well!
