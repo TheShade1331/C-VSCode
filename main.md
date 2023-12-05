@@ -985,3 +985,20 @@ Practice Set 11:
 4. Create an Array dynamically capable of Storing 5 Integers. Now Use Realloc so that it Can Now Store 10 Integers.
 5. Create an Array of Multiplication Table of 7. Use Realloc to Make it store to 15th Multiple.
 6. Attempt Problem 4 using calloc().. No Thanks.. Then Again.. Last Program.. Might as Well!
+
+Chapter 11: Finished
+5/12/2023 23:29
+Video - 15:13:23 / 15:13:23
+
+Finished Course!!
+
+Comment on CodeWithHarry's Video:
+```
+First Step into the Programming World!
+From Being Queer When Anything Related to Coding Came in Conversation..
+To Getting this Massive Boost of Confidence which Slowly Built up as I Completed this Mammoth Video.. It was 15 hrs Long.. Took me 6 Months though😅..
+But Really This Video Really Made Me Familiar with this New World..
+Thank You So Much For this Wonderful Course @CodeWithHarry!
+& I am Leaving with a Great Confidence & Smile Saying..
+"Give me Any Problem.. It is Not Optimal.. But At-least I Can Solve it in C!!"
+```
